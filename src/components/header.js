@@ -5,12 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/global.css"
 
 export default function Header() {
-  return ( 
+    return (
 
-    <Container>
-        <Navbar expand="md" variant="dark">
+        <div className="sticky-top">
+            <div className="wrapper">
+            <Navbar expand="md" variant="dark">
                 <Navbar.Brand href="#">Leon Carstens</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarReponsive"/>
+                <Navbar.Toggle aria-controls="navbarReponsive" />
                 <Navbar.Collapse id="navbarReponsive">
                     <Nav className="ml-auto" as="ul">
                         <Nav.Item as="li" >
@@ -29,13 +30,15 @@ export default function Header() {
 
 
                 </Navbar.Collapse>
-                
+
             </Navbar>
-
-
-    </Container>
-
+            </div>
             
 
-  )
+
+        </div>
+
+
+
+    )
 }

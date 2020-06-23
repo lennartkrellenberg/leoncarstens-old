@@ -4,14 +4,14 @@
 * {
     padding: 0;
     margin: 0;
-    background: #121212;
     color: #FFFF;
     font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
-    max-width: 1366px;
+    max-width: 1333px;
     margin:  0 auto;
+
 }
 
 .link {
@@ -52,3 +52,91 @@ h4 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
+.hero {
+    background: turquoise;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.hero-items h3 {
+  font-size: 7em;
+}
+
+.title {
+    background: turquoise;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.title h2 {
+    font-size: 4em;
+}
+
+
+.hero::before {
+    animation: bounce 1s ease infinite;
+    bottom: 2rem;
+    color: #fff;
+    content: '╲╱';
+    font-size: 2rem;
+    height: 4rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    margin-left: -3rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+
+
+@media screen and (max-width: 992px) {
+    .hero-items h3 {
+        font-size: 5em;
+    }
+
+    .title {
+        height: 100px;
+    }
+
+    
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .hero-items h3 {
+        font-size: 3em;
+    }
+
+    .title {
+        height: 75px;
+    }
+
+    .title h2 {
+        font-size: 2em;
+    }
+
+    
+  }

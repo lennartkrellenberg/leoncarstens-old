@@ -16,27 +16,84 @@ export default ({ data }) => {
 
 
   return (
-    <div>
-      <Header />
-      <Container>
-        <div className="gallery">{data.potraitimages.nodes.map(image => (<p><Img className="gallery-image" key={image.id} fluid={image.childImageSharp.fluid}></Img></p>))}</div>
-      </Container>
-      <Footer></Footer>
+ //   <div>
+//      <Header />
+//      <div className="wrapper">
+//       <div className="gallery">{data.potraitimages.nodes.map(image => (<p><Img className="gallery-image" key={image.id} fluid={image.childImageSharp.fluid}></Img></p>))}</div>
+//      </div>
+//      <Footer></Footer>
+//    </div>
+
+<div>
+  <section className="hero">
+    <div className="wrapper">
+      <div className="hero-items">
+      <h3>Leon Carstens</h3>
+      </div>
     </div>
+  </section>
+
+
+  <section className="Potraits">
+    <div className="title">
+        <h2>Potraits</h2>
+    </div>
+
+    <div className="potraits-image">
+      <Img fluid={data.image.childImageSharp.fluid}></Img>
+    </div>
+  </section>
+
+  <section className="Events">
+    <div className="title">
+        <h2>Events</h2>
+    </div>
+
+    <div className="events-image">
+      <Img fluid={data.image2.childImageSharp.fluid}></Img>
+    </div>
+  </section>
+
+  <section className="Produkte">
+    <div className="title">
+        <h2>Produkte</h2>
+    </div>
+
+    <div className="produkte-image">
+      <Img fluid={data.image3.childImageSharp.fluid}></Img>
+    </div>
+  </section>
+</div>
   )
 }
 
+
+
 export const query = graphql`
-query PotraitsQuery {
- potraitimages: allFile(filter: {relativeDirectory: {eq: "gallery-potraits"}}) {
-    nodes {
-      id
-      childImageSharp {
-        fluid{
-           ...GatsbyImageSharpFluid
-        }
+query  {
+  image: file(relativePath: {eq: "potraits.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
       }
     }
   }
+
+  image2: file(relativePath: {eq: "events.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  image3: file(relativePath: {eq: "produkte.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
 }
 `

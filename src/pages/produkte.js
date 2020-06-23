@@ -16,9 +16,7 @@ export default ({ data }) => {
   return (
     <div>
       <Header />
-      <Container>     
   <div className="gallery">{data.productimages.nodes.map(image => (<p><Img className="gallery-image"  key={image.id} fluid={image.childImageSharp.fluid}></Img></p>))}</div>
-        </Container>
       <Footer></Footer>
     </div>
   )
