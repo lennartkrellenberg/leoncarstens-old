@@ -1,10 +1,8 @@
 import React from "react"
-import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import "../styles/global.css"
-import { Container } from "react-bootstrap"
 
 
 
@@ -63,6 +61,8 @@ export default ({ data }) => {
       <Img fluid={data.image3.childImageSharp.fluid}></Img>
     </div>
   </section>
+
+  <Footer/>
 </div>
   )
 }
@@ -71,25 +71,25 @@ export default ({ data }) => {
 
 export const query = graphql`
 query  {
-  image: file(relativePath: {eq: "potraits.jpg"}) {
+  image: file(relativePath: {eq: "potraits.jpeg"}) {
     childImageSharp {
-      fluid {
+      fluid(maxWidth: 3080, quality: 100) {
         ...GatsbyImageSharpFluid
       }
     }
   }
 
-  image2: file(relativePath: {eq: "events.jpg"}) {
+  image2: file(relativePath: {eq: "events.jpeg"}) {
     childImageSharp {
-      fluid {
+      fluid(maxWidth: 3080, quality: 100) {
         ...GatsbyImageSharpFluid
       }
     }
   }
 
-  image3: file(relativePath: {eq: "produkte.jpg"}) {
+  image3: file(relativePath: {eq: "produkte.jpeg"}) {
     childImageSharp {
-      fluid {
+      fluid(maxWidth: 3080, quality: 100) {
         ...GatsbyImageSharpFluid
       }
     }

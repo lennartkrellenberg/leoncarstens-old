@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     color: #FFFF;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Merriweather', serif;
+  }
 
 .wrapper {
     max-width: 1333px;
@@ -54,7 +54,7 @@ h4 {
 }
 
 .hero {
-    background: turquoise;
+    background: #002E66;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -68,13 +68,14 @@ h4 {
 }
 
 .title {
-    background: turquoise;
+    background: #002E66;
     height: 100vh;
     width: 100%;
     display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
+  border-bottom: white 5px solid;
 }
 
 .title h2 {
@@ -98,6 +99,26 @@ h4 {
     text-align: center;
     width: 6rem;
   }
+
+
+  .footer {
+    padding-top: 30px;
+    background: #002E66;
+
+  }
+
+  .footer-left {
+    float: left;
+  }
+
+  .footer-right {
+    float: right;
+  }
+
+  .footer-center {
+    justify-content: center;
+    display: flex;
+  }
   
   @keyframes bounce {
     50% {
@@ -113,30 +134,26 @@ h4 {
 
 
 @media screen and (max-width: 992px) {
-    .hero-items h3 {
-        font-size: 5em;
-    }
-
-    .title {
-        height: 100px;
-    }
-
+  html {
+    font-size: 80%;
+  }
     
   }
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
-    .hero-items h3 {
-        font-size: 3em;
+    html {
+      font-size: 75%;
     }
-
-    .title {
-        height: 75px;
-    }
-
-    .title h2 {
-        font-size: 2em;
-    }
-
     
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    .hero {
+      font-size: 60%;
+    }
+    .footer {
+      font-size: 85%;
+    }
   }
