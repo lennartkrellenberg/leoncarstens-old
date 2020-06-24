@@ -58,10 +58,7 @@ export default function Footer() {
                 
 
             </div>
-            <div className="footer-center">
-                    <p>Created with <span role="img" aria-label="hundred">💯</span> by <a href="https://lennartkrellenberg.com" className="link">Lennart Krellenberg</a></p>
-                </div>
-
+            
         </div>
     )
 }

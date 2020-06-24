@@ -104,6 +104,7 @@ h4 {
   .footer {
     padding-top: 30px;
     background: #002E66;
+    height: 75px;
 
   }
 
@@ -117,11 +118,7 @@ h4 {
     padding-right: 10px;
   }
 
-  .footer-center {
-    justify-content: center;
-    display: flex;
-  }
-  
+ 
   @keyframes bounce {
     50% {
       transform: translateY(-50%);
@@ -151,6 +148,8 @@ h4 {
     .footer {
       font-size: 85%;
     }
+
+    
     
   }
 
@@ -162,4 +161,6 @@ h4 {
     .footer {
       font-size: 85%;
     }
+
+    
   }
