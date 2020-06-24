@@ -1,7 +1,6 @@
 import React from "react"
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
-import { Container } from "react-bootstrap"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 

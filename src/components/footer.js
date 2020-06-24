@@ -55,11 +55,12 @@ export default function Footer() {
                     <p><a className="link" href="https://instagram.com/leoncarstens/">Instagram</a> | <a className="link" href="mailto:heyhey@leoncarstens.de">Mail</a></p>
                 </div>
 
-                <div className="footer-center">
-                    <p>Created with <span role="img" aria-label="hundred">💯</span> by <a href="https://lennartkrellenberg.com" className="link">Lennart Krellenberg</a></p>
-                </div>
+                
 
             </div>
+            <div className="footer-center">
+                    <p>Created with <span role="img" aria-label="hundred">💯</span> by <a href="https://lennartkrellenberg.com" className="link">Lennart Krellenberg</a></p>
+                </div>
 
         </div>
     )
