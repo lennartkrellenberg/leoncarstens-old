@@ -15,7 +15,7 @@ export default function Header() {
                 <Navbar.Collapse id="navbarReponsive">
                     <Nav className="ml-auto" as="ul">
                         <Nav.Item as="li" >
-                            <Link className="nav-link" activeClassName="active" to="/">Potraits</Link>
+                            <Link className="nav-link" activeClassName="active" to="/potraits">Potraits</Link>
                         </Nav.Item>
 
                         <Nav.Item as="li" >

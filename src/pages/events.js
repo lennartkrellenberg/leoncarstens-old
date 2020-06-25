@@ -1,9 +1,5 @@
 import React from "react"
-import Header from "../components/header.js"
-import Footer from "../components/footer.js"
-import { Container } from "react-bootstrap"
-import Img from "gatsby-image"
-import { graphql } from "gatsby"
+import "../styles/global.css"
 
 
 
@@ -15,26 +11,9 @@ export default ({ data }) => {
 
   return (
     <div>
-      <Header />
-      <Container>     
-  <div className="gallery">{data.eventimages.nodes.map(image => (<p><Img   key={image.id} fluid={image.childImageSharp.fluid}></Img></p>))}</div>
-        </Container>
-      <Footer></Footer>
+     <h5>Events</h5>
     </div>
   )
 }
 
-export const query = graphql`
-query EventQuery {
- eventimages: allFile(filter: {relativeDirectory: {eq: "gallery-events"}}) {
-    nodes {
-      id
-      childImageSharp {
-        fluid {
-           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-}
-`
+

@@ -1,8 +1,11 @@
 import React from "react"
 import Footer from "../components/footer.js"
+import Header from "../components/header.js"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import "../styles/global.css"
+import { Link } from "gatsby";
+
 
 
 
@@ -31,10 +34,12 @@ export default ({ data }) => {
     </div>
   </section>
 
+  <Header/>
+
 
   <section className="Potraits">
     <div className="title">
-        <h2>Potraits</h2>
+        <h2><Link className="link" to="/potraits">Potraits</Link></h2>
     </div>
 
     <div className="potraits-image">
@@ -44,7 +49,7 @@ export default ({ data }) => {
 
   <section className="Events">
     <div className="title">
-        <h2>Events</h2>
+        <h2><Link className="link" to="/events">Events</Link></h2>
     </div>
 
     <div className="events-image">
@@ -54,11 +59,11 @@ export default ({ data }) => {
 
   <section className="Produkte">
     <div className="title">
-        <h2>Produkte</h2>
+        <h2><Link className="link" to="/produkte">Produkte</Link></h2>
     </div>
 
     <div className="produkte-image">
-      <Img fluid={data.image3.childImageSharp.fluid}></Img>
+      <Img href="" fluid={data.image3.childImageSharp.fluid}></Img>
     </div>
   </section>
 

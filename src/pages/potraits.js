@@ -11,7 +11,7 @@ export default ({ data }) => {
 
   return (
     <div>
-     <h5>Produkte</h5>
+     <h5>Potraits</h5>
     </div>
   )
 }
