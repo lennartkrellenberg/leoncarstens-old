@@ -1,4 +1,4 @@
-const $ = require("jquery")
+const $ = require("jQuery")
 
 export const onInitialClientRender = () => {
   $(document).ready(function () {
