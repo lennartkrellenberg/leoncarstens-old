@@ -1,0 +1,16 @@
+.footer {
+    padding-top: 30px;
+    background: #002E66;
+    height: 75px;
+
+  }
+
+  .footer-left {
+    float: left;
+    padding-left: 10px;
+  }
+
+  .footer-right {
+    float: right;
+    padding-right: 10px;
+  }

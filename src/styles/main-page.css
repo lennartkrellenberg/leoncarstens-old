@@ -1,0 +1,29 @@
+.hero {
+    background: #002E66;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.hero-items h3 {
+  font-size: 7em;
+}
+
+
+
+.title {
+    background: #002E66;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.title h2 {
+    font-size: 4em;
+}

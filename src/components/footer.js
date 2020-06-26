@@ -1,6 +1,7 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/global.css"
+import "../styles/footer.css"
 import { Link } from "gatsby";
 
 export default function Footer() {

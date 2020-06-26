@@ -4,6 +4,7 @@ import Header from "../components/header.js"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import "../styles/global.css"
+import "../styles/main-page.css"
 import { Link } from "gatsby";
 
 
@@ -12,63 +13,65 @@ import { Link } from "gatsby";
 
 
 export default ({ data }) => {
-  // Set up the array of image data and `media` keys.
-  // You can have as many entries as you'd like.
-
 
   return (
- //   <div>
-//      <Header />
-//      <div className="wrapper">
-//       <div className="gallery">{data.potraitimages.nodes.map(image => (<p><Img className="gallery-image" key={image.id} fluid={image.childImageSharp.fluid}></Img></p>))}</div>
-//      </div>
-//      <Footer></Footer>
-//    </div>
+   
+    <div>
+      <Header />
 
-<div>
-  <section className="hero">
-    <div className="wrapper">
-      <div className="hero-items">
-      <h3>Leon Carstens</h3>
-      </div>
+      <section className="hero">
+        <div className="wrapper">
+          <div className="hero-items">
+            <h3>Leon Carstens</h3>
+            <a href="#Potraits" className="scroll-down">
+              <div className="mouse">
+                <span></span>
+              </div>
+
+              <div className="arrow">
+                <span></span>
+              </div>
+            </a>
+
+            
+          </div>
+        </div>
+      </section>
+
+
+
+      <section className="Potraits" id="Potraits">
+        <div className="title">
+          <h2><Link className="link" to="/potraits">Potraits</Link></h2>
+        </div>
+
+        <div className="potraits-image">
+          <Img fluid={data.image.childImageSharp.fluid}></Img>
+        </div>
+      </section>
+
+      <section className="Events">
+        <div className="title">
+          <h2><Link className="link" to="/events">Events</Link></h2>
+        </div>
+
+        <div className="events-image">
+          <Img fluid={data.image2.childImageSharp.fluid}></Img>
+        </div>
+      </section>
+
+      <section className="Produkte">
+        <div className="title">
+          <h2><Link className="link" to="/produkte">Produkte</Link></h2>
+        </div>
+
+        <div className="produkte-image">
+          <Img href="" fluid={data.image3.childImageSharp.fluid}></Img>
+        </div>
+      </section>
+
+      <Footer />
     </div>
-  </section>
-
-  <Header/>
-
-
-  <section className="Potraits">
-    <div className="title">
-        <h2><Link className="link" to="/potraits">Potraits</Link></h2>
-    </div>
-
-    <div className="potraits-image">
-      <Img fluid={data.image.childImageSharp.fluid}></Img>
-    </div>
-  </section>
-
-  <section className="Events">
-    <div className="title">
-        <h2><Link className="link" to="/events">Events</Link></h2>
-    </div>
-
-    <div className="events-image">
-      <Img fluid={data.image2.childImageSharp.fluid}></Img>
-    </div>
-  </section>
-
-  <section className="Produkte">
-    <div className="title">
-        <h2><Link className="link" to="/produkte">Produkte</Link></h2>
-    </div>
-
-    <div className="produkte-image">
-      <Img href="" fluid={data.image3.childImageSharp.fluid}></Img>
-    </div>
-  </section>
-
-  <Footer/>
-</div>
   )
 }
 
@@ -102,3 +105,8 @@ query  {
 
 }
 `
+
+
+
+
+

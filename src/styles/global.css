@@ -1,39 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+html {
+  font-family: 'Poppins', serif;
+  scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     color: #FFFF;
-    background: #002E66;
-    font-family: 'Poppins', serif;
   }
 
 .wrapper {
     max-width: 1333px;
     margin:  0 auto;
-
 }
 
-.link {
-    
+.link {    
     text-decoration: none;
     color: #FFFF;
     transition: all 500ms;
-
   }
-
-
 
 .link:hover {
     text-decoration: none;
     color: yellow;
     font-size-adjust: 20px;
 }
-
-.col-md-3 {
-    margin-left: 20px;
-}
-
 
 li {
     font-size: 16px;
@@ -45,121 +39,32 @@ h4 {
     font-weight: 700;
 }
 
-
-.gallery-image {
-    margin-bottom: 75px;
-    border-radius: 1%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-.hero {
-    background: #002E66;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-    
-}
-
-.hero-items h3 {
-  font-size: 7em;
-}
-
-.title {
-    background: #002E66;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-}
-
-.title h2 {
-    font-size: 4em;
-}
-
-
-.hero::before {
-    animation: bounce 1s ease infinite;
-    bottom: 2rem;
-    color: #fff;
-    content: '╲╱';
-    font-size: 2rem;
-    height: 4rem;
-    left: 50%;
-    letter-spacing: -1px;
-    line-height: 4rem;
-    margin-left: -3rem;
-    opacity: 0.8;
-    position: absolute;
-    text-align: center;
-    width: 6rem;
-  }
-
-
-  .footer {
-    padding-top: 30px;
-    background: #002E66;
-    height: 75px;
-
-  }
-
-  .footer-left {
-    float: left;
-    padding-left: 10px;
-  }
-
-  .footer-right {
-    float: right;
-    padding-right: 10px;
-  }
-
- 
-  @keyframes bounce {
-    50% {
-      transform: translateY(-50%);
-    }
-  
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-
-
-
 @media screen and (max-width: 992px) {
   html {
     font-size: 80%;
-  }
-    
-  }
+                    } 
+                              }
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
     html {
       font-size: 75%;
-    }
+                  }
 
     .footer {
       font-size: 85%;
-    }
-
-    
-    
-  }
-
+                  }
+                            }
 
   @media only screen and (max-width: 480px) {
     .hero {
       font-size: 60%;
-    }
+                    }
+
     .footer {
       font-size: 85%;
-    }
+                    }
+                            }
 
-    
-  }
+
+  
