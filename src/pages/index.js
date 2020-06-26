@@ -17,7 +17,7 @@ export default ({ data }) => {
   return (
    
     <div>
-
+              <Header/>
       <section className="hero">
         <div className="wrapper">
           <div className="hero-items">

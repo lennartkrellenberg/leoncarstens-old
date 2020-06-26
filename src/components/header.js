@@ -1,3 +1,5 @@
+//header.js
+
 import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
@@ -8,12 +10,16 @@ import "../styles/scroll-down.css"
 
 
 
+
+
 export default function Header() {
     return (
             
             <div className="sticky-top">
+                
 
-                <Navbar expand="md" variant="dark" className="nav">
+
+                <Navbar expand="md" variant="light" className="nav" >
                     <Navbar.Brand href="#">Leon Carstens</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarReponsive" />
                     <Navbar.Collapse id="navbarReponsive">
@@ -47,4 +53,9 @@ export default function Header() {
 
     )
 }
+
+
+
+
+
 
