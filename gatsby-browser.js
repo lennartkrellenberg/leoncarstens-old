@@ -3,7 +3,7 @@
 const $ = require("jquery")
 
 
-(function ($) {
+$(function ($) {
     $(document).ready(function(){
 
       // hide .navbar first
@@ -23,4 +23,4 @@ const $ = require("jquery")
       });
 
   });
-    }($)); 
+})
