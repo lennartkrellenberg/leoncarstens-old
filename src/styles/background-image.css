@@ -1,0 +1,24 @@
+.backgroundImage {
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+
+.black-overlay {
+    display: -webkit-flex; 
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.black-overlay h1 {
+    font-size: 8em;
+}
+
+

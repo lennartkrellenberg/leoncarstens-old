@@ -1,19 +1,51 @@
-import React from "react"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Header from "../components/header"
+import BackgroundImage from 'gatsby-background-image'
+import Img from "gatsby-image"
 import "../styles/global.css"
+import "../styles/background-image.css"
 
 
 
 
-export default ({ data }) => {
-  // Set up the array of image data and `media` keys.
-  // You can have as many entries as you'd like.
-  
+const PotraitPage = (props) => (
+  <div>
+    <Header/>
+    <BackgroundImage
+      className="backgroundImage"
+      fluid={props.data.indexImage.childImageSharp.fluid}
+    >
+      <div className="black-overlay">
+        <h1>Produkte</h1>
+      </div>
+    </BackgroundImage>
 
-  return (
-    <div>
-     <h5>Produkte</h5>
-    </div>
-  )
-}
+    
+
+
+
+  </div>
+
+)
+
+export default PotraitPage
+
+export const pageQuery = graphql`
+query {
+  indexImage: file(relativePath: { eq: "5.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 1800, quality: 75) {
+        ...GatsbyImageSharpFluid
+
+      }
+    }
+  }
+
+
+
+}`
+
+
 
 

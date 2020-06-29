@@ -21,7 +21,7 @@ export default ({ data }) => {
       <section className="hero">
         <div className="wrapper">
           <div className="hero-items">
-            <h3>Leon Carstens</h3>
+            <h1>Leon Carstens</h1>
             <a href="#Potraits" className="scroll-down">
               <div className="mouse">
                 <span></span>
@@ -45,7 +45,7 @@ export default ({ data }) => {
         </div>
 
         <div className="potraits-image">
-          <Img fluid={data.image.childImageSharp.fluid}></Img>
+          <a href="/potraits" aria-label="potraitsLink"><Img fluid={data.image.childImageSharp.fluid}></Img></a>
         </div>
       </section>
 
@@ -55,7 +55,7 @@ export default ({ data }) => {
         </div>
 
         <div className="events-image">
-          <Img fluid={data.image2.childImageSharp.fluid}></Img>
+          <a href="events" aria-label="eventsLink"><Img fluid={data.image2.childImageSharp.fluid}></Img></a>
         </div>
       </section>
 
@@ -65,7 +65,7 @@ export default ({ data }) => {
         </div>
 
         <div className="produkte-image">
-          <Img href="" fluid={data.image3.childImageSharp.fluid}></Img>
+          <a href="produkte" aria-label="produkteLink"><Img  fluid={data.image3.childImageSharp.fluid}></Img></a>
         </div>
       </section>
 
