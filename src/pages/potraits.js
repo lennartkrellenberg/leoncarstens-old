@@ -19,12 +19,10 @@ const PotraitPage = (props) => (
         <h1>Potraits</h1>
       </div>
     </BackgroundImage>
-
     
+   </div>
 
-
-
-  </div>
+   
 
 )
 
