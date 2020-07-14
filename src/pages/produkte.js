@@ -2,10 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Header from "../components/header"
 import BackgroundImage from 'gatsby-background-image'
-import Img from "gatsby-image"
 import "../styles/global.css"
 import "../styles/background-image.css"
 import "../styles/gallery.css"
+import Footer from "../components/footer.js"
+
 
 
 
@@ -22,20 +23,26 @@ const PotraitPage = (props) => (
       </div>
     </BackgroundImage>
 
+    <div className="gallery-section">
+
     <div className="gallery">
-      <div className="gallery-item medium"><Img fluid={props.data.image1.childImageSharp.fluid}></Img></div>
-      <div className="gallery-item large"><Img fluid={props.data.image2.childImageSharp.fluid}></Img></div>
-      <div className="gallery-item medium"><Img fluid={props.data.image3.childImageSharp.fluid}></Img></div>
-      <div className="gallery-item small"><Img fluid={props.data.image4.childImageSharp.fluid}></Img></div>
-      <div className="gallery-item tall"><Img fluid={props.data.image5.childImageSharp.fluid}></Img></div>
-      <div className="gallery-item wide"><Img fluid={props.data.image6.childImageSharp.fluid}></Img></div>
+      <div className="gallery-item fourxtwo one">One</div>
+      <div className="gallery-item threeXtwo two">Two</div>
+      <div className="gallery-item twoxthree two">Three</div>
+      <div className="gallery-item tall four">Four</div>
+      <div className="gallery-item fourxone five">Five</div>
+      <div className="gallery-item wide six">Six</div>
+    
+
 
 
     </div>
 
     
 
+    </div>
 
+    <Footer></Footer>
 
   </div>
 

@@ -20,7 +20,7 @@ export default function Header() {
 
 
                 <Navbar expand="md" variant="light" className="nav" >
-                    <Navbar.Brand href="#">Leon Carstens</Navbar.Brand>
+                    <Navbar.Brand href="/">Leon Carstens</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarReponsive" />
                     <Navbar.Collapse id="navbarReponsive">
                         <Nav className="ml-auto navbar" as="ul">

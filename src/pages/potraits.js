@@ -4,6 +4,9 @@ import Header from "../components/header"
 import BackgroundImage from 'gatsby-background-image'
 import "../styles/global.css"
 import "../styles/background-image.css"
+import "../styles/gallery.css"
+import Footer from "../components/footer.js"
+import Img from "gatsby-image"  
 
 
 
@@ -19,6 +22,29 @@ const PotraitPage = (props) => (
         <h1>Potraits</h1>
       </div>
     </BackgroundImage>
+
+    <div className="gallery-section">
+
+    <div className="gallery">
+      <Img fluid={props.data.potrait1.childImageSharp.fluid} className="gallery-item fourxtwo"></Img>
+      <Img fluid={props.data.potrait2.childImageSharp.fluid} className="gallery-item threeXtwo"></Img>
+      <Img fluid={props.data.potrait3.childImageSharp.fluid} className="gallery-item twoxthree"></Img>
+      <Img fluid={props.data.potrait4.childImageSharp.fluid} className="gallery-item tall"></Img>
+      <Img fluid={props.data.potrait5.childImageSharp.fluid} className="gallery-item fourxone"></Img>
+      <Img fluid={props.data.potrait6.childImageSharp.fluid} className="gallery-item wide"></Img>
+    </div>
+
+    </div>
+
+    <div className="morePhotos">
+      <h3>Finde mehr Fotos auf meinem Instagram!</h3>
+
+     
+    </div>
+
+    
+
+    <Footer></Footer>
     
    </div>
 
@@ -38,6 +64,56 @@ query {
       }
     }
   }
+
+  potrait1: file(relativePath: {eq: "potraits.jpeg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait2: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait3: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait4: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait5: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait6: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  
 
 
 
