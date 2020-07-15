@@ -36,11 +36,7 @@ const PotraitPage = (props) => (
 
     </div>
 
-    <div className="morePhotos">
-      <h3>Finde mehr Fotos auf meinem Instagram!</h3>
-
-     
-    </div>
+    
 
     
 

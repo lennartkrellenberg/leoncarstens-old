@@ -6,6 +6,7 @@ import "../styles/global.css"
 import "../styles/background-image.css"
 import "../styles/gallery.css"
 import Footer from "../components/footer.js"
+import Img from "gatsby-image"  
 
 
 
@@ -26,62 +27,26 @@ const PotraitPage = (props) => (
 
     <div className="gallery-section">
 
-      <div className="gallery">
-        <BackgroundImage
-          className="gallery-item fourxtwo"
-          fluid={props.data.indexImage.childImageSharp.fluid}
-        >
-          <div className="black-overlay">
-            <h1>Events</h1>
-          </div>
-        </BackgroundImage>      
-        <BackgroundImage
-          className="gallery-item threextwo"
-          fluid={props.data.indexImage.childImageSharp.fluid}
-        >
-        </BackgroundImage>
-        <BackgroundImage
-          className="gallery-item twoxthree"
-          fluid={props.data.indexImage.childImageSharp.fluid}
-        >
-        
-        </BackgroundImage>       
-        
-        <BackgroundImage
-          className="gallery-item tall"
-          fluid={props.data.indexImage.childImageSharp.fluid}
-        >
-        </BackgroundImage>
-        <BackgroundImage
-          className=" gallery-item fourxone"
-          fluid={props.data.indexImage.childImageSharp.fluid}
-        >
-          
-        </BackgroundImage>
-
-        <BackgroundImage
-          className=" gallery-item wide"
-          fluid={props.data.indexImage.childImageSharp.fluid}
-        >
-          
-        </BackgroundImage>
-
-
-
-
-      </div>
-
-
+    <div className="gallery">
+      <Img fluid={props.data.potrait1.childImageSharp.fluid} className="gallery-item fourxtwo"></Img>
+      <Img fluid={props.data.potrait2.childImageSharp.fluid} className="gallery-item threeXtwo"></Img>
+      <Img fluid={props.data.potrait3.childImageSharp.fluid} className="gallery-item twoxthree"></Img>
+      <Img fluid={props.data.potrait4.childImageSharp.fluid} className="gallery-item tall"></Img>
+      <Img fluid={props.data.potrait5.childImageSharp.fluid} className="gallery-item fourxone"></Img>
+      <Img fluid={props.data.potrait6.childImageSharp.fluid} className="gallery-item wide"></Img>
+    </div>
 
     </div>
 
+    
+
+    
+
     <Footer></Footer>
+    
+   </div>
 
-
-
-
-
-  </div>
+   
 
 )
 
@@ -89,7 +54,7 @@ export default PotraitPage
 
 export const pageQuery = graphql`
 query {
-  indexImage: file(relativePath: { eq: "7.jpg"}) {
+  indexImage: file(relativePath: { eq: "111.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 1800, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -98,6 +63,58 @@ query {
     }
   }
 
+  potrait1: file(relativePath: {eq: "potraits.jpeg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait2: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait3: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait4: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait5: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  potrait6: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 75) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+  
+
 
 
 }`
+
+

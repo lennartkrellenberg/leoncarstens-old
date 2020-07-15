@@ -49,7 +49,7 @@ export default function Footer() {
         <div className="footer">
             <div className="wrapper">
                 <div className="footer-left">
-                    <p><Link className="link" to="/impressum">Impressum</Link>| <Link className="link" to="/datenschutz">Datenschutz</Link></p>
+                    <p><Link className="link" to="/impressum">Impressum </Link>| <Link className="link" to="/datenschutz">Datenschutz</Link></p>
                 </div>
 
                 <div className="footer-right">

@@ -51,7 +51,7 @@ h4 {
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
     html {
-      font-size: 75%;
+      font-size: 70%;
                   }
 
     .footer {
@@ -61,7 +61,7 @@ h4 {
 
   @media only screen and (max-width: 480px) {
     .hero {
-      font-size: 60%;
+      font-size: 55%;
                     }
 
     .footer {
