@@ -35,6 +35,10 @@ export default function Header() {
                             <Nav.Item as="li" >
                                 <Link className="nav-link" activeClassName="active" to="/produkte">Produkte</Link>
                             </Nav.Item>
+
+                            <Nav.Item as="li" >
+                                <Link className="nav-link" activeClassName="active" to="/aboutme">Über Mich</Link>
+                            </Nav.Item>
                         </Nav>
 
 

@@ -46,7 +46,7 @@ export default function Footer() {
         //     </div>
         // </div>
 
-        <div className="footer">
+        <div className="footer sticky-bottom">
             <div className="wrapper">
                 <div className="footer-left">
                     <p><Link className="link" to="/impressum">Impressum </Link>| <Link className="link" to="/datenschutz">Datenschutz</Link></p>

@@ -1,6 +1,7 @@
 import React from "react"
 import "../styles/global.css"
 import Header from "../components/header.js"
+import Footer from "../components/footer.js"
 
 
 
@@ -14,6 +15,8 @@ export default ({ data }) => {
     <div>
       <Header></Header>
      <h5>Datenschutz</h5>
+
+     <Footer></Footer>
     </div>
   )
 }
