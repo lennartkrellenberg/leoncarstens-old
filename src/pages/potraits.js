@@ -52,7 +52,7 @@ export default PotraitPage
 
 export const pageQuery = graphql`
 query {
-  indexImage: file(relativePath: { eq: "potraits.jpg"}) {
+  indexImage: file(relativePath: { eq: "potraits.jpeg"}) {
     childImageSharp {
       fluid(maxWidth: 1800, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -61,7 +61,7 @@ query {
     }
   }
 
-  potrait1: file(relativePath: {eq: "gallery-potraits/4.jpeg"}) {
+  potrait1: file(relativePath: {eq: "gallery-potraits/4.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -93,7 +93,7 @@ query {
     }
   }
 
-  potrait5: file(relativePath: {eq: "gallery-potraits/Sylt-200712-26.jpg"}) {
+  potrait5: file(relativePath: {eq: "gallery-potraits/sylt20071226.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -101,7 +101,7 @@ query {
     }
   }
 
-  potrait6: file(relativePath: {eq: "gallery-potraits/Sylt-200712-51.jpg"}) {
+  potrait6: file(relativePath: {eq: "gallery-potraits/sylt20071251.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid

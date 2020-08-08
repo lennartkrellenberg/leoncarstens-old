@@ -5,6 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/global.css"
 import Header from '../components/header';
 import { Link } from "gatsby";
+import { graphql } from "gatsby";
+import Img from "gatsby-image"
+
 
 
 
@@ -29,7 +32,7 @@ const AboutMePage = (props) => (
 
             </div>
 
-            <img className="me" src="https://images.pexels.com/photos/999267/pexels-photo-999267.jpeg?auto=compresscs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"></img>
+            <Img fixed={props.data.me.childImageSharp.fixed} className="gallery-item fourxtwo"></Img>
         </div>
         </div>
 
@@ -63,3 +66,18 @@ const AboutMePage = (props) => (
 
 export default AboutMePage
 
+
+export const aboutmequery = graphql`
+query  {
+  me: file(relativePath: {eq: "about/Kiel-200713-42.jpg"}) {
+    childImageSharp {
+      fixed(height: 250, quality: 75) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+
+
+
+}
+`

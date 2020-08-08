@@ -54,7 +54,7 @@ export default PotraitPage
 
 export const pageQuery = graphql`
 query {
-  indexImage: file(relativePath: { eq: "events.jpg"}) {
+  indexImage: file(relativePath: { eq: "events.jpeg"}) {
     childImageSharp {
       fluid(maxWidth: 1800, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -63,7 +63,7 @@ query {
     }
   }
 
-  potrait1: file(relativePath: {eq: "gallery-events/3.jpeg"}) {
+  potrait1: file(relativePath: {eq: "gallery-events/3.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid

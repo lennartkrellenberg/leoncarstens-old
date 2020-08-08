@@ -27,12 +27,12 @@ const PotraitPage = (props) => (
     <div className="gallery-section">
 
 <div className="gallery">
-  <Img fluid={props.data.potrait1.childImageSharp.fluid} className="gallery-item fourxtwo"></Img>
-  <Img fluid={props.data.potrait2.childImageSharp.fluid} className="gallery-item threeXtwo"></Img>
-  <Img fluid={props.data.potrait3.childImageSharp.fluid} className="gallery-item twoxthree"></Img>
-  <Img fluid={props.data.potrait4.childImageSharp.fluid} className="gallery-item tall"></Img>
-  <Img fluid={props.data.potrait5.childImageSharp.fluid} className="gallery-item fourxone"></Img>
-  <Img fluid={props.data.potrait6.childImageSharp.fluid} className="gallery-item wide"></Img>
+  <Img fluid={props.data.produkte1.childImageSharp.fluid} className="gallery-item fourxtwo"></Img>
+  <Img fluid={props.data.produkte2.childImageSharp.fluid} className="gallery-item threeXtwo"></Img>
+  <Img fluid={props.data.produkte3.childImageSharp.fluid} className="gallery-item twoxthree"></Img>
+  <Img fluid={props.data.produkte4.childImageSharp.fluid} className="gallery-item tall"></Img>
+  <Img fluid={props.data.produkte5.childImageSharp.fluid} className="gallery-item fourxone"></Img>
+  <Img fluid={props.data.produkte6.childImageSharp.fluid} className="gallery-item wide"></Img>
 </div>
 
 </div>
@@ -53,7 +53,7 @@ export default PotraitPage
 
 export const pageQuery = graphql`
 query {
-indexImage: file(relativePath: { eq: "produkte.jpg"}) {
+indexImage: file(relativePath: { eq: "produkte.jpeg"}) {
 childImageSharp {
   fluid(maxWidth: 1800, quality: 75) {
     ...GatsbyImageSharpFluid
@@ -62,7 +62,7 @@ childImageSharp {
 }
 }
 
-potrait1: file(relativePath: {eq: "gallery-produkte/alisa-anton-MbVn7iA9Z08-unsplash.jpg"}) {
+produkte1: file(relativePath: {eq: "gallery-produkte/alisa-anton-MbVn7iA9Z08-unsplash.jpg"}) {
 childImageSharp {
   fluid(maxWidth: 3080, quality: 75) {
     ...GatsbyImageSharpFluid
@@ -70,7 +70,7 @@ childImageSharp {
 }
 }
 
-potrait2: file(relativePath: {eq: "gallery-produkte/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg"}) {
+produkte2: file(relativePath: {eq: "gallery-produkte/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg"}) {
 childImageSharp {
   fluid(maxWidth: 3080, quality: 75) {
     ...GatsbyImageSharpFluid
@@ -78,7 +78,7 @@ childImageSharp {
 }
 }
 
-potrait3: file(relativePath: {eq: "gallery-produkte/alexander-mils-lCPhGxs7pww-unsplash.jpg"}) {
+produkte3: file(relativePath: {eq: "gallery-produkte/alexander-mils-lCPhGxs7pww-unsplash.jpg"}) {
 childImageSharp {
   fluid(maxWidth: 3080, quality: 75) {
     ...GatsbyImageSharpFluid
@@ -86,7 +86,7 @@ childImageSharp {
 }
 }
 
-potrait4: file(relativePath: {eq: "gallery-produkte/anton-jansson-hG3t7bP86KE-unsplash.jpg"}) {
+produkte4: file(relativePath: {eq: "gallery-produkte/anton-jansson-hG3t7bP86KE-unsplash.jpg"}) {
 childImageSharp {
   fluid(maxWidth: 3080, quality: 75) {
     ...GatsbyImageSharpFluid
@@ -94,7 +94,7 @@ childImageSharp {
 }
 }
 
-potrait5: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+produkte5: file(relativePath: {eq: "gallery-produkte/brooke-cagle-CcTm3JMAURE-unsplash.jpg"}) {
 childImageSharp {
   fluid(maxWidth: 3080, quality: 75) {
     ...GatsbyImageSharpFluid
@@ -102,7 +102,7 @@ childImageSharp {
 }
 }
 
-potrait6: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+produkte6: file(relativePath: {eq: "gallery-produkte/brooke-cagle-LCcFI_26diA-unsplash.jpg"}) {
 childImageSharp {
   fluid(maxWidth: 3080, quality: 75) {
     ...GatsbyImageSharpFluid

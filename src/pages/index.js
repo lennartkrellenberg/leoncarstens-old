@@ -6,6 +6,10 @@ import { graphql } from "gatsby"
 import "../styles/global.css"
 import "../styles/main-page.css"
 import { Link } from "gatsby";
+import BackgroundImage from 'gatsby-background-image';
+import "../styles/background-image.css"
+
+
 
 
 
@@ -40,32 +44,51 @@ export default ({ data }) => {
 
 
       <section className="Potraits" id="Potraits">
-        <div className="title">
-          <h2><Link className="link" to="/potraits">Potraits</Link></h2>
-        </div>
 
         <div className="potraits-image">
-          <a href="/potraits" aria-label="potraitsLink"><Img fluid={data.image.childImageSharp.fluid}></Img></a>
+          <a href="/potraits" aria-label="potraitsLink">
+          <BackgroundImage
+      className="mainBackgroundImage"
+      fluid={data.image.childImageSharp.fluid}
+    >
+      <div className="blackwhite-overlay">
+        <h1>Potraits</h1>
+      </div>
+    </BackgroundImage></a>
         </div>
       </section>
 
       <section className="Events">
-        <div className="title">
-          <h2><Link className="link" to="/events">Events</Link></h2>
+        <div className="trenner">
         </div>
 
         <div className="events-image">
-          <a href="events" aria-label="eventsLink"><Img fluid={data.image2.childImageSharp.fluid}></Img></a>
+          <a href="/events" aria-label="eventsLink">
+          <BackgroundImage
+      className="mainBackgroundImage"
+      fluid={data.image2.childImageSharp.fluid}
+    >
+      <div className="blackwhite-overlay">
+        <h1>Events</h1>
+      </div>
+    </BackgroundImage></a>
         </div>
       </section>
 
       <section className="Produkte">
-        <div className="title">
-          <h2><Link className="link" to="/produkte">Produkte</Link></h2>
+        <div className="trenner">
         </div>
 
         <div className="produkte-image">
-          <a href="produkte" aria-label="produkteLink"><Img  fluid={data.image3.childImageSharp.fluid}></Img></a>
+        <a href="/produkte" aria-label="produkteLink">
+          <BackgroundImage
+      className="mainBackgroundImage"
+      fluid={data.image3.childImageSharp.fluid}
+    >
+      <div className="blackwhite-overlay">
+        <h1>Produkte</h1>
+      </div>
+    </BackgroundImage></a>
         </div>
       </section>
 
