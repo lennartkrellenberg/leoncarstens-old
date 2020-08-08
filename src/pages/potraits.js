@@ -52,7 +52,7 @@ export default PotraitPage
 
 export const pageQuery = graphql`
 query {
-  indexImage: file(relativePath: { eq: "111.jpg"}) {
+  indexImage: file(relativePath: { eq: "potraits.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 1800, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -61,7 +61,7 @@ query {
     }
   }
 
-  potrait1: file(relativePath: {eq: "potraits.jpeg"}) {
+  potrait1: file(relativePath: {eq: "gallery-potraits/4.jpeg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -69,7 +69,7 @@ query {
     }
   }
 
-  potrait2: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+  potrait2: file(relativePath: {eq: "gallery-potraits/200521_MaiHH-4.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -77,7 +77,7 @@ query {
     }
   }
 
-  potrait3: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+  potrait3: file(relativePath: {eq: "gallery-potraits/emmi-200722-5.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -85,7 +85,7 @@ query {
     }
   }
 
-  potrait4: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+  potrait4: file(relativePath: {eq: "gallery-potraits/felix-200723-9.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -93,7 +93,7 @@ query {
     }
   }
 
-  potrait5: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+  potrait5: file(relativePath: {eq: "gallery-potraits/Sylt-200712-26.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -101,7 +101,7 @@ query {
     }
   }
 
-  potrait6: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+  potrait6: file(relativePath: {eq: "gallery-potraits/Sylt-200712-51.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid

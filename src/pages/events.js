@@ -54,7 +54,7 @@ export default PotraitPage
 
 export const pageQuery = graphql`
 query {
-  indexImage: file(relativePath: { eq: "111.jpg"}) {
+  indexImage: file(relativePath: { eq: "events.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 1800, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -63,7 +63,7 @@ query {
     }
   }
 
-  potrait1: file(relativePath: {eq: "potraits.jpeg"}) {
+  potrait1: file(relativePath: {eq: "gallery-events/3.jpeg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -71,7 +71,7 @@ query {
     }
   }
 
-  potrait2: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+  potrait2: file(relativePath: {eq: "gallery-events/6.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -79,7 +79,7 @@ query {
     }
   }
 
-  potrait3: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+  potrait3: file(relativePath: {eq: "gallery-events/190810_name_078.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -87,7 +87,7 @@ query {
     }
   }
 
-  potrait4: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+  potrait4: file(relativePath: {eq: "gallery-events/190810_name_101.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -95,7 +95,7 @@ query {
     }
   }
 
-  potrait5: file(relativePath: {eq: "gallery-potraits/ivan-rohovchenko-5ldx53UNdGg-unsplash.jpg"}) {
+  potrait5: file(relativePath: {eq: "gallery-events/190810_name_112.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
@@ -103,7 +103,7 @@ query {
     }
   }
 
-  potrait6: file(relativePath: {eq: "gallery-potraits/thomas-bennie-B21WLsX6a5c-unsplash.jpg"}) {
+  potrait6: file(relativePath: {eq: "gallery-events/200229_Workshop_ApplicAid_Grips-87.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid
