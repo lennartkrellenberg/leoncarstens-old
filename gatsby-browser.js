@@ -7,7 +7,7 @@ $(function ($) {
     $(document).ready(function(){
 
       // hide .navbar first
-      $(".navbar").hide();
+      $(".removingNav").hide();
 
       // fade in .navbar
       $(function () {
@@ -15,9 +15,9 @@ $(function ($) {
 
                    // set distance user needs to scroll before we start fadeIn
               if ($(this).scrollTop() > 100) {
-                  $('.navbar').fadeIn();
+                  $('.removingNav').fadeIn();
               } else {
-                  $('.navbar').fadeOut();
+                  $('.removingNav').fadeOut();
               }
           });
       });

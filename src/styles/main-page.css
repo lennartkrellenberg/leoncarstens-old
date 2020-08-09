@@ -25,4 +25,8 @@
   height: 3vh;
 }
 
+.mainlink {
+  text-decoration: none !important;
+}
+
 

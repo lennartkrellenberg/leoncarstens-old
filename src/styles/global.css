@@ -12,6 +12,10 @@ html {
 
   }
 
+  .mainlink {
+    text-decoration: none !important; 
+  }
+
 .wrapper {
     max-width: 1333px;
     margin:  0 auto;
@@ -21,6 +25,7 @@ html {
     text-decoration: none;
     color: #FFFF;
     transition: all 500ms;
+    text-decoration: none;
   }
 
 .link:hover {

@@ -12,7 +12,7 @@ import Img from "gatsby-image"
 
 
 
-const PotraitPage = (props) => (
+const ProduktePage = (props) => (
   <div>
     <Header/>
     <BackgroundImage
@@ -49,7 +49,7 @@ const PotraitPage = (props) => (
 
 )
 
-export default PotraitPage
+export default ProduktePage
 
 export const pageQuery = graphql`
 query {

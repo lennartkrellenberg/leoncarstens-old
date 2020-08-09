@@ -4,6 +4,16 @@
 
   .nav-colored { background-color:#000; }
 .nav-transparent { background-color:transparent;}
+
+
+.brand {
+  background-image: url("../images/logos/logo-small.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
  
   
 

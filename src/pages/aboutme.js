@@ -4,10 +4,14 @@ import "../styles/aboutme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/global.css"
 import Header from '../components/header';
-import { Link } from "gatsby";
 import { graphql } from "gatsby";
 import Img from "gatsby-image"
-
+import { Navbar, Nav } from "react-bootstrap"
+import { Link } from "gatsby"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../styles/global.css"
+import "../styles/header.css"
+import "../styles/scroll-down.css"
 
 
 
@@ -17,7 +21,43 @@ import Img from "gatsby-image"
 const AboutMePage = (props) => (
     <div>
 
-            <Header></Header>
+<div className="sticky-top">
+                
+
+
+                <Navbar expand="md" variant="light" className="" >
+                    <Navbar.Brand href="/" className="brand"></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarReponsive" />
+                    <Navbar.Collapse id="navbarReponsive">
+                        <Nav className="ml-auto" as="ul">
+                            <Nav.Item as="li" >
+                                <Link className="nav-link" activeClassName="active" to="/potraits">Potraits</Link>
+                            </Nav.Item>
+
+                            <Nav.Item as="li" >
+                                <Link className="nav-link" activeClassName="active" to="/events">Events</Link>
+                            </Nav.Item>
+
+                            <Nav.Item as="li" >
+                                <Link className="nav-link" activeClassName="active" to="/produkte">Produkte</Link>
+                            </Nav.Item>
+
+                            <Nav.Item as="li" >
+                                <Link className="nav-link" activeClassName="active" to="/aboutme">Über Mich</Link>
+                            </Nav.Item>
+                        </Nav>
+
+
+
+                    </Navbar.Collapse>
+
+                </Navbar>
+
+                
+
+
+
+            </div>
 
         <div className="aboutme-section">
 

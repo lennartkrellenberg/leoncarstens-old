@@ -5,6 +5,8 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 30px;
+    image-rendering: -webkit-optimize-contrast;
+
 }
 
 
@@ -36,6 +38,15 @@
     justify-content: center;
     height: 100%;
 }
+
+.blackwhite-overlay:hover {
+    background-color: rgba(0, 0, 0, .0);
+
+}
+
+.mainlink {
+    text-decoration: none;
+  }
 
 
 
