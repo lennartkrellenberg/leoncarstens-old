@@ -26,10 +26,7 @@ export default ({ data }) => {
       <section className="hero">
         <div className="wrapper">
           <div className="hero-items">
-          <Img className="biglogo" fixed={data.biglogo.childImageSharp.fixed}></Img>
-          <Img className="smalllogo" fixed={data.smalllogo.childImageSharp.fixed}></Img>
-
-          
+          <Img fixed={data.biglogo.childImageSharp.fixed}></Img>
             <a href="#Potraits" className="scroll-down">
               <div className="mouse">
                 <span></span>
@@ -70,7 +67,7 @@ export default ({ data }) => {
           <a href="/events" aria-label="eventsLink" className="mainlink">
           <BackgroundImage
       className="mainBackgroundImage"
-      fixed={data.image2.childImageSharp.fixed}
+      fluid={data.image2.childImageSharp.fluid}
     >
       <div className="blackwhite-overlay">
         <h1>Events</h1>
@@ -107,19 +104,12 @@ export const query = graphql`
 query  {
   biglogo: file(relativePath: {eq: "logos/logo.png"}) {
     childImageSharp {
-      fixed(width: 600 quality: 75) {
-        ...GatsbyImageSharpFixed
-      }
-    }
-  }
-
-  smalllogo: file(relativePath: {eq: "logos/logo.png"}) {
-    childImageSharp {
       fixed(width: 300 quality: 75) {
         ...GatsbyImageSharpFixed
       }
     }
   }
+
   image: file(relativePath: {eq: "potraits.jpeg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {

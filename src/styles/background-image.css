@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    color: #ffff !important;
 }
 
 .black-overlay h1 {
@@ -37,6 +38,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    color:#fff !important;
 }
 
 .blackwhite-overlay:hover {

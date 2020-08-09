@@ -8,10 +8,8 @@ import { graphql } from "gatsby";
 import Img from "gatsby-image"
 import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/global.css"
 import "../styles/header.css"
-import "../styles/scroll-down.css"
 
 
 
@@ -72,7 +70,7 @@ const AboutMePage = (props) => (
 
             </div>
 
-            <Img fixed={props.data.me.childImageSharp.fixed} className="gallery-item fourxtwo"></Img>
+            <Img fixed={props.data.me.childImageSharp.fixed} className="leoncarstens"></Img>
         </div>
         </div>
 
@@ -111,7 +109,7 @@ export const aboutmequery = graphql`
 query  {
   me: file(relativePath: {eq: "about/Kiel-200713-42.jpg"}) {
     childImageSharp {
-      fixed(height: 250, quality: 75) {
+      fixed(height: 250, quality: 100) {
         ...GatsbyImageSharpFixed
       }
     }

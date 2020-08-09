@@ -28,13 +28,12 @@
 
 .item2 {
     grid-area: b;
-    width: 800px;
+    width: 750px;
     color: #000;
 }
 
 .item3 {
     grid-area: c;
-    color: ;
 }
 
 .me {
@@ -49,3 +48,72 @@
 .aboutme-link {
     color: #002E66;
 }
+
+
+@media only screen and (max-width: 1200px) {
+
+    .aboutme-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .aboutme {
+        position: relative;
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+        grid-template-rows: repeat(4, 10);
+        grid-gap: 10px;
+      grid-auto-rows: 75px;
+      grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+    
+    }
+    
+    .item1 {
+        grid-area: a;
+        color: #000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item2 {
+        grid-area: b;
+        width: 80vw;
+        color: #000;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item3 {
+        grid-area: c;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .leoncarstens {
+        grid-area: d;
+        margin: 0 auto;
+    
+    }
+    
+    .margin-left {
+        margin-left: 20px;
+    }
+    
+    .aboutme-link {
+        color: #002E66;
+    }
+                            }
