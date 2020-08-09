@@ -5,7 +5,9 @@ import { graphql } from "gatsby"
 import "../styles/global.css"
 import "../styles/main-page.css"
 import BackgroundImage from 'gatsby-background-image';
-import "../styles/background-image.css"
+import "../styles/background-image.css";
+import Img from "gatsby-image";
+
 
 
 
@@ -24,7 +26,10 @@ export default ({ data }) => {
       <section className="hero">
         <div className="wrapper">
           <div className="hero-items">
-            <h1>Leon Carstens</h1>
+          <Img className="biglogo" fixed={data.biglogo.childImageSharp.fixed}></Img>
+          <Img className="smalllogo" fixed={data.smalllogo.childImageSharp.fixed}></Img>
+
+          
             <a href="#Potraits" className="scroll-down">
               <div className="mouse">
                 <span></span>
@@ -65,7 +70,7 @@ export default ({ data }) => {
           <a href="/events" aria-label="eventsLink" className="mainlink">
           <BackgroundImage
       className="mainBackgroundImage"
-      fluid={data.image2.childImageSharp.fluid}
+      fixed={data.image2.childImageSharp.fixed}
     >
       <div className="blackwhite-overlay">
         <h1>Events</h1>
@@ -100,6 +105,21 @@ export default ({ data }) => {
 
 export const query = graphql`
 query  {
+  biglogo: file(relativePath: {eq: "logos/logo.png"}) {
+    childImageSharp {
+      fixed(width: 600 quality: 75) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+
+  smalllogo: file(relativePath: {eq: "logos/logo.png"}) {
+    childImageSharp {
+      fixed(width: 300 quality: 75) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
   image: file(relativePath: {eq: "potraits.jpeg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {

@@ -29,4 +29,23 @@
   text-decoration: none !important;
 }
 
+.smalllogo {
+  display: none;
+  position: absolute;
+    z-index: -1;
+}
+
+.biglogo {
+  position: absolute;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 960px) {
+  .biglogo {
+    display: none;
+    visibility: hidden;              }
+
+ 
+                          }
+
 
