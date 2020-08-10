@@ -76,22 +76,7 @@ export default ({ data }) => {
         </div>
       </section>
 
-      <section className="Produkte">
-        <div className="trenner">
-        </div>
-
-        <div className="produkte-image">
-        <a href="/produkte" aria-label="produkteLink" className="mainlink">
-          <BackgroundImage
-      className="mainBackgroundImage"
-      fluid={data.image3.childImageSharp.fluid}
-    >
-      <div className="blackwhite-overlay">
-        <h1>Produkte</h1>
-      </div>
-    </BackgroundImage></a>
-        </div>
-      </section>
+     
 
       <Footer />
     </div>
@@ -126,7 +111,7 @@ query  {
     }
   }
 
-  image3: file(relativePath: {eq: "produkte.jpeg"}) {
+  image3: file(relativePath: {eq: "about/Kiel-200713-31.jpg"}) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 75) {
         ...GatsbyImageSharpFluid

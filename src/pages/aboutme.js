@@ -3,7 +3,6 @@ import "../styles/global.css"
 import "../styles/aboutme.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/global.css"
-import Header from '../components/header';
 import { graphql } from "gatsby";
 import Img from "gatsby-image"
 import { Navbar, Nav } from "react-bootstrap"
@@ -36,9 +35,7 @@ const AboutMePage = (props) => (
                                 <Link className="nav-link" activeClassName="active" to="/events">Events</Link>
                             </Nav.Item>
 
-                            <Nav.Item as="li" >
-                                <Link className="nav-link" activeClassName="active" to="/produkte">Produkte</Link>
-                            </Nav.Item>
+                          
 
                             <Nav.Item as="li" >
                                 <Link className="nav-link" activeClassName="active" to="/aboutme">Über Mich</Link>
@@ -63,9 +60,9 @@ const AboutMePage = (props) => (
             <h1 className="item1">moin.</h1>
             <p className="item2">Ich bin Leon Carstens, Fotograf und Schüler aus Hamburg. Ich bin buchbar für Portraitshootings und Events deutschlandweit. Du hast Interesse an Fotos jeglicher Art? Schreib mir eine Mail oder ruf einfach an!</p>
             <div className="item3">
-                <a href="www.Google.de" className="aboutme-link">//mail</a>
-                <a href="www.Google.de" className="aboutme-link margin-left">//instagram</a>
-                <a href="www.Google.de" className="aboutme-link margin-left">//telefon</a>
+                <a href="www.Google.de" className="aboutme-link">&frasl;&frasl;mail</a>
+                <a href="www.Google.de" className="aboutme-link margin-left">&frasl;&frasl;instagram</a>
+                <a href="www.Google.de" className="aboutme-link margin-left">&frasl;&frasl;telefon</a>
 
 
             </div>

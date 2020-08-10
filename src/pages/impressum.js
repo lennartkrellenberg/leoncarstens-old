@@ -1,10 +1,6 @@
 import React from "react"
 import "../styles/global.css"
-import Header from "../components/header.js"
 import "../styles/impressum.css"
-import Footer from "../components/footer"
-import { graphql } from "gatsby";
-import Img from "gatsby-image"
 import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 import "../styles/global.css"
@@ -37,9 +33,7 @@ export default ({ data }) => {
                                 <Link className="nav-link" activeClassName="active" to="/events">Events</Link>
                             </Nav.Item>
 
-                            <Nav.Item as="li" >
-                                <Link className="nav-link" activeClassName="active" to="/produkte">Produkte</Link>
-                            </Nav.Item>
+                           
 
                             <Nav.Item as="li" >
                                 <Link className="nav-link" activeClassName="active" to="/aboutme">Über Mich</Link>
@@ -56,7 +50,8 @@ export default ({ data }) => {
 
 
 
-            </div>      <div className="wrapper">
+            </div>     
+             <div className="wrapper">
 
      <h1 className="topic">Impressum</h1>
 

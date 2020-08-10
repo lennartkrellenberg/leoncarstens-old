@@ -1,10 +1,7 @@
 import React from "react"
 import "../styles/global.css"
-import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import "../styles/datenschutz.css";
-import { graphql } from "gatsby";
-import Img from "gatsby-image"
 import { Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 import "../styles/global.css"
@@ -38,9 +35,7 @@ export default ({ data }) => {
                                 <Link className="nav-link" activeClassName="active" to="/events">Events</Link>
                             </Nav.Item>
 
-                            <Nav.Item as="li" >
-                                <Link className="nav-link" activeClassName="active" to="/produkte">Produkte</Link>
-                            </Nav.Item>
+                            
 
                             <Nav.Item as="li" >
                                 <Link className="nav-link" activeClassName="active" to="/aboutme">Über Mich</Link>
